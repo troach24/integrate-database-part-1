@@ -11,5 +11,5 @@ exports.seed = function(knex, Promise) {
       ]);
     }).then(() => {
       return knex.raw("ALTER SEQUENCE resolution_id_seq RESTART WITH 4;");
-    })
+    });
 };

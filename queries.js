@@ -20,6 +20,8 @@ module.exports = {
             .then(record => record[0])
     },
     delete(id){
-        return database('resolution').where("id", id).del()
+        return database('resolution')
+        .where("id", id)
+        .del()
     }
 };

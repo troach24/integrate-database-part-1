@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     resolution.increments();
     resolution.text('dueDate');
     resolution.text('resolution');
-  })
+  });
 };
 
 exports.down = function(knex, Promise) {
