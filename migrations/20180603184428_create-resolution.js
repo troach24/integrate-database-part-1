@@ -2,7 +2,7 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('resolution', resolution => {
     resolution.increments();
-    resolution.date('dueDate');
+    resolution.text('dueDate');
     resolution.text('resolution');
   })
 };
